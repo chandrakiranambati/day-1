@@ -1,0 +1,32 @@
+HTTP 1.1
+
+1.The most prevalent version of HTTP used to be HTTP/1.1. Since it is a plain-text protocol, there are some inefficiencies - especially when lots of resources are requested, such as a web page. HTTP/1.1 messages can be either unencrypted (web site addresses start with http://) or encrypted (web site addresses start with https://). Based on the start of the URL, clients decide which protocol to use, defaulting to http:// in most cases.
+2.It was actually developed as a common language that establishes connection and interaction between client and server machines.
+* Client has to send a request to the server by using the GET/POST method.
+* Client will respond to the request with an acknowledgement of request and demanded resource. 
+It is a live process until the client receives all the resources to load an entire webpage.
+3.It has a long response time whereas Http 2.0 has reduced response time.
+4. It uses formats like gzip to compress the data transferred in the messages.
+
+HTTP 2.0
+
+1.HTTP/2 uses a more advanced compression file format called HPACK that eliminates redundant information in HTTP header packets. This eliminates a few bytes from every HTTP packet. Given the volume of HTTP packets involved in loading even a single webpage, those bytes add up quickly, resulting in faster loading.
+
+2.HTTP2 is binary, instead of textual.
+3.HTTP2 is fully multiplexed, instead of ordered and blocking.
+4.HTTP2 uses header compression to reduce overhead.
+5.HTTP2 allows servers to “push” responses proactively into client caches.
+
+
+Objects and its internal representation in Javascript:
+
+Objects are used to store keyed collections of various data and more complex entities. In JavaScript, objects penetrate almost every aspect of the language. So we must understand them first before going in-depth anywhere else.
+
+An object can be created with figure brackets {…} with an optional list of properties. A property is a “key: value” pair, where key is a string (also called a “property name”), and value can be anything.
+
+We can imagine an object as a cabinet with signed files. Every piece of data is stored in its file by the key. It’s easy to find a file by its name or add/remove a file.
+
+An empty object (“empty cabinet”) can be created using one of two syntaxes:
+
+let user = new Object(); // "object constructor" syntax
+let user = {};  // "object literal" syntax
